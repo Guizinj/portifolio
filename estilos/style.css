@@ -34,6 +34,7 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  margin-bottom: 10px;
 }
 #menu ul{
   list-style: none;
@@ -51,4 +52,53 @@ header{
 #menu a:hover{
   background-color: var(--destaque-inverso);
   color: var(--destaque);
+}
+main{
+  display: grid;
+  grid-template-columns: auto 90vw auto;  
+  margin-top: 20px;
+}
+#ficha{
+  grid-column: 2
+ 
+}
+#ficha img#perfil{
+  display: block;
+  margin: auto;
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  outline: 5px solid var(--destaque);
+
+  transition: transform .5s ease;
+}
+#ficha img#perfil:hover{
+  transform: scale(1.03);
+}
+#ficha h1{
+  color: var(--destaque);
+  text-align: center;
+  margin: 15px 0px;
+}
+#ficha p{
+  text-align: justify;
+}
+#ficha div#midia{
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  font-size: 1.5em;
+  justify-content: center;
+  align-content: center;
+}
+#midia > a{
+  color: var(--destaque);
+  transition: transform .4s ease;
+  
+}
+#midia > a:hover{
+  transform: scale(1.2);
+
 }
