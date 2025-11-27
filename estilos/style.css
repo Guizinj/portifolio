@@ -90,7 +90,7 @@ main{
 }
 #ficha div#midia{
   display: flex;
-  gap: 30px;
+  gap: 15px;
   margin-top: 15px;
   font-size: 1.5em;
   justify-content: center;
@@ -194,11 +194,12 @@ article h2{
   border-left-color: var(--destaque);
   border-left-width: 20px;
 }
+
 @media screen  and (min-width:765px) {
   #skill-container{
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-  
+
 }
  
